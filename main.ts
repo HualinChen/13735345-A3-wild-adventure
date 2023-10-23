@@ -30,7 +30,7 @@ let mySprite2: Sprite = null
 let mySprite3: Sprite = null
 let mySprite: Sprite = null
 game.splash("Hi", "It's a Wild Adventure. ")
-game.splash("Manipulate the bird to eat the strawberry. ")
+game.splash("Manipulate the bird to eat the strawberry!")
 game.splash("Beware of stumps and demons! ", "Don't touch them.")
 info.setLife(1)
 info.setScore(0)
