@@ -6,6 +6,10 @@ scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles0, function (s
     info.setLife(1)
     info.changeLifeBy(-1)
 })
+info.onScore(15, function () {
+    music.play(music.melodyPlayable(music.jumpDown), music.PlaybackMode.UntilDone)
+    game.gameOver(true)
+})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.coin, function (sprite, otherSprite) {
     music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.UntilDone)
     info.changeScoreBy(1)
@@ -17,10 +21,6 @@ info.onLifeZero(function () {
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     info.changeScoreBy(1)
     sprites.destroy(otherSprite, effects.spray, 500)
-})
-info.onScore(6, function () {
-    music.play(music.melodyPlayable(music.jumpDown), music.PlaybackMode.UntilDone)
-    game.gameOver(true)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     sprites.destroy(otherSprite, effects.spray, 500)
