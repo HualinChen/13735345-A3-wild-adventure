@@ -9,7 +9,7 @@ My game‘Wild-adventure’ Link：https://arcade.makecode.com/S46415-49921-2882
 
 
 
-> Open this page at [https://hualinchen.github.io/13735345-a3-wild-adventure/](https://hualinchen.github.io/13735345-a3-wild-adventure/)
+> Open this page at https://hualinchen.github.io/13735345-A3-wild-adventure/
 
 ## Use as Extension
 
